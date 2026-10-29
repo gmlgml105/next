@@ -44,10 +44,7 @@ export default function TodoQueryContainer() {
     return (
         <>
             <p>투두 목록</p>
-            <TodoQueryContainer />
         </>
     );
-
-// 2. 다이나믹 라우트를 활용해서 데이터를 fetch하기
-
 }
+
