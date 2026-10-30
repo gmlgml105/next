@@ -3,7 +3,7 @@
 
 export default function Page() {
 
-    const getName = (name: any) => name || "홍길동"
+    const getName = (name?: string) => name || "홍길동"
     const login = true
 
     // 만약 사용자가 로그인이라면 회원의 이름을 화면에 태그로 출력하고, 

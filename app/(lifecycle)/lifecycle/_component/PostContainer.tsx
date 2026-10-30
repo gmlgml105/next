@@ -2,8 +2,7 @@
 // 데이터를 fetching하고, 각각 유저 데이터를 컴포넌트로 분리하여 화면에 이름만 출력하기
 "use client"
 
-import { Suspense, use, useEffect, useState } from "react";
-import User from "./Users";
+import { Suspense, use } from "react";
 import Loading from "@/components/common/Loading";
 import Link from "next/link";
 

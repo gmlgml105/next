@@ -4,7 +4,7 @@
 import { useState } from "react";
 
 // blue
-export default function page() {
+export default function Page() {
     const [color, setColor] = useState("")
     const handleColorChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setColor(e.target.value)

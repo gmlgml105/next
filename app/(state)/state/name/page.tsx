@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function page() {
+export default function Page() {
 
     // 사용자가 입력한 key가 Enter라면 
     // 사용자가 입력한 글자를 화면에 p태그에 출력하기

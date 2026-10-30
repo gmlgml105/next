@@ -1,5 +1,5 @@
 import Link from "next/link"
-import type { Todo } from "./TodoContainer"
+import type { Todo } from "./TodoQueryContainer"
 
 export default function TodoQuery({ todo }: { todo: Todo }) {
     return (

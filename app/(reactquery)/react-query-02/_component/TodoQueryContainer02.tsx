@@ -5,6 +5,7 @@
 import ErrorComponent from "@/components/common/ErrorCompo"
 import Loading from "@/components/common/Loading"
 import { useQuery } from "@tanstack/react-query"
+import Link from "next/link";
 
 export interface Todo {
     userId:    number;
@@ -33,7 +34,6 @@ export default function TodoQueryContainer() {
 
     // TodoQuery.tsx 컴포넌트를 만들고 컴포넌트로 분리하기
     // 옵셔널 체이닝 ?.: 마운트시 빈배열 또는 데이터 접근이 안되서 생기는 오류를 안전하게 접근하도록 처리
-
     const todoList = data?.map((todo: Todo, i: number) => (
         <li key={i}>{todo.title}</li>
     ))
@@ -42,9 +42,14 @@ export default function TodoQueryContainer() {
     if(error) return <ErrorComponent />
 
     return (
-        <>
+        <ul>
             <p>투두 목록</p>
-        </>
+            <h2>{data?.title}</h2>
+            <p>번호: {data?.id}</p>
+            <p>작성자: {data?.userId}</p>
+            <p>상태: {data?.completed ? "완료" : "미완료"}</p>
+            
+            <Link href="/lifecycle">← 목록으로</Link>
+        </ul>
     );
 }
-

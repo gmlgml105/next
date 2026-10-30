@@ -5,6 +5,7 @@
 import ErrorComponent from "@/components/common/ErrorCompo"
 import Loading from "@/components/common/Loading"
 import { useQuery } from "@tanstack/react-query"
+import Link from "next/link";
 
 export interface Todo {
     userId:    number;
@@ -43,6 +44,12 @@ export default function TodoQueryContainer() {
     return (
         <>
             <p>투두 목록</p>
+            <h2>{data?.title}</h2>
+            <p>번호: {data?.id}</p>
+            <p>작성자: {data?.userId}</p>
+            <p>상태: {data?.completed ? "완료" : "미완료"}</p>
+
+            <Link href="/lifecycle">← 목록으로</Link>
         </>
     );
 }

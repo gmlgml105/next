@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 
-export default function page() {
+export default function Page() {
     // number(변수) setNumber(함수)
     const [number, setNumber] = useState<number>(0)
 

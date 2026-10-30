@@ -3,7 +3,7 @@
 import { useState } from "react";
 import TodoContainer from "./_component/TodoContainer";
 
-export default function page() {
+export default function Page() {
 
     // 할 일 목록 상태 관리
     // 해당 목록을 화면에 리스트로 출력하고 할 일 앞에 체크박스를 클릭하면
